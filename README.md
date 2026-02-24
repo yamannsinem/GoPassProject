@@ -8,7 +8,12 @@ Backend:
 Java (JDBC)
 RESTful service structure  /
 Layered architecture (Controller – Service – DAO)  /
-Input validation & exception handling  
+Input validation & exception handling  /
+Spring Boot  /
+Spring Data JPA  /
+Maven  /
+Relational Database System  /
+Architecture
 
 Database:
 
@@ -21,6 +26,13 @@ NOT NULL constraints/
 Indexing for performance optimization/
 Transaction management/
 Complex SQL queries (JOIN, GROUP BY, aggregate functions, subqueries)
+
+
+The project follows a layered architecture approach:
+
+src ├── controller ├── service ├── repository ├── entity └── config
+
+Application layers are separated to improve maintainability and scalability.
 
 Frontend:
 
@@ -37,3 +49,16 @@ Form validation & dynamic DOM manipulation
 -Booking history tracking
 -Admin-side data management
 -Transaction-safe booking operations
+
+
+Navigate to the project directory:
+
+cd GoPass
+
+Run the application:
+
+mvn spring-boot:run
+
+The application runs on:
+
+http://localhost:8080
